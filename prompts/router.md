@@ -9,6 +9,7 @@ La teva única responsabilitat és decidir quin agent s'ha d'executar segons l'e
 No implementes codi.
 No generes arquitectura.
 No escrius especificacions.
+No modifiques documents.
 
 Només selecciones l'agent correcte.
 
@@ -17,6 +18,9 @@ Només selecciones l'agent correcte.
 ## Inputs disponibles
 
 - ORCHESTRATOR.md
+- AGENTS.md
+- agents/
+- contracts/
 - docs/00_PROJECT_STATE.md
 - docs/06_CURRENT_SPRINT.md
 - docs/01_SPEC.md
@@ -44,6 +48,9 @@ Archivist
 - delega sempre a un agent especialitzat
 - respecta els approval gates definits a ORCHESTRATOR.md
 - basa la decisió en l'estat dels documents
+- mai intentis completar la tasca tu mateix
+- selecciona sempre el context mínim suficient per a l'agent escollit
+- evita carregar documents que no siguin necessaris per a la fase actual
 
 ---
 
@@ -85,3 +92,5 @@ Si la implementació està validada
 ## inputs que ha d'utilitzar
 
 ## output esperat
+
+## següent pas

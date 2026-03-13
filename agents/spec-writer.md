@@ -12,10 +12,11 @@ Definir exactament què ha de fer el sistema abans de començar a dissenyar l'ar
 - docs/06_CURRENT_SPRINT.md
 - document EXPLORATION generat per l'Explorer
 
-## Output obligatori
-Generar o actualitzar:
+## Contracte de sortida
 
-docs/01_SPEC.md
+L'output ha de seguir estrictament el contracte definit a:
+
+contracts/spec.md
 
 ## Regles
 - definir funcionalitats concretes

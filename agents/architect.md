@@ -6,16 +6,29 @@ Dissenyar l'arquitectura tècnica del sistema a partir de la SPEC.
 ## Objectiu
 Definir com es construirà el sistema abans de començar a implementar codi.
 
+---
+
 ## Inputs permesos
+
 - docs/01_SPEC.md
+- docs/02_ARCHITECTURE.md
 - docs/00_PROJECT_STATE.md
 - docs/06_CURRENT_SPRINT.md
 - document EXPLORATION si existeix
 
-## Output obligatori
-Generar o actualitzar:
+---
+
+## Contracte de sortida
+
+L'output ha de seguir estrictament el contracte definit a:
+
+contracts/architecture.md
+
+El resultat ha d'actualitzar o generar:
 
 docs/02_ARCHITECTURE.md
+
+---
 
 ## Regles
 
@@ -25,6 +38,9 @@ docs/02_ARCHITECTURE.md
 - definir models principals
 - evitar implementar codi
 - evitar decisions massa detallades prematures
+- prioritzar simplicitat i arquitectura clara
+
+---
 
 ## Format de sortida
 
@@ -40,38 +56,57 @@ database:
 
 testing:
 
+---
+
 ## components
 
-- API
-- serveis
-- models
-- utilitats
+- Orchestrator
+- Agents
+- Prompt Runner
+- State Documents
+- Skills Registry
+
+---
 
 ## flux de dades
 
 Usuari  
 ↓  
-API  
+Orchestrator  
 ↓  
-Servei  
+Agent seleccionat  
 ↓  
-Base de dades
+Documents d'estat  
+↓  
+Output estructurat  
+↓  
+Següent agent
+
+---
 
 ## models principals
 
-Model 1  
-Model 2  
-Model 3  
+ProjectState  
+CurrentSprint  
+AgentDefinition  
+PromptDefinition  
+ArtifactDocument  
+
+---
 
 ## decisions tècniques
 
 - decisió 1
 - decisió 2
 
+---
+
 ## riscos tècnics
 
 - risc 1
 - risc 2
+
+---
 
 ## següent pas
 
